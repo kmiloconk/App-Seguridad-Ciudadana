@@ -32,7 +32,7 @@ En el login solo estan validados 2 usuarios:
 ## Vista Administrador
 * Si entras como ```admin``` verás una lista con todas las emergencias creadas
   - ![image](https://github.com/user-attachments/assets/8dcd89b6-cf63-43c3-b0e6-162c57fcf8ac)
-* Al presionar una te preguntará te saldrá un un dialogo de confirmación
+* Al presionar una te saldrá un un dialogo de confirmación
   - ![image](https://github.com/user-attachments/assets/9190bd53-e74a-4fb5-809e-1127a4433efa)
 * Al aceptar te llevará al mapa y te mostrará la ubicación donde se realizó la emergencia
   - ![image](https://github.com/user-attachments/assets/04a5cae5-1861-45aa-9090-cc60fff2b3d4)
