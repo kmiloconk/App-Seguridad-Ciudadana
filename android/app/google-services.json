@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767565989780",
+    "project_id": "flowing-depot-428721-q6",
+    "storage_bucket": "flowing-depot-428721-q6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767565989780:android:34552ef3b3a0d2c4b83181",
+        "android_client_info": {
+          "package_name": "com.example.app_prueba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOL9QSRh0o67RajYanQ2UJvdFri80V1IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
