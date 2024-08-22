@@ -85,4 +85,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'flowing-depot-428721-q6.appspot.com',
     measurementId: 'G-6G5V9Z2PY5',
   );
+
 }
