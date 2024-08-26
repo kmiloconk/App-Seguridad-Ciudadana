@@ -161,6 +161,9 @@ class _HomePageState extends State<HomePage> {
             ),
             ElevatedButton(
               onPressed: () {
+                setState(() {
+                  active = true;
+                });
                 Navigator.pop(context);
                 controller.newCameraposition();
                 controller.sendData(
@@ -174,9 +177,6 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       );
-      setState(() {
-        active = true;
-      });
     }
   }
 }

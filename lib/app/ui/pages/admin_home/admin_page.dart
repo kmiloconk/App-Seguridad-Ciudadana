@@ -3,6 +3,7 @@ import 'package:app_prueba/app/ui/pages/admin_home/admin_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart'; // Importa url_launcher
 
 class AdminPage extends StatelessWidget {
   AdminPage({Key? key}) : super(key: key);
@@ -53,6 +54,20 @@ class AdminPage extends StatelessWidget {
                         myLocationEnabled: true,
                         markers: controller.markers,
                         zoomControlsEnabled: false,
+                      ),
+                      Positioned(
+                        top: 20,
+                        right: 20,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            _openGoogleMaps(lati, long);
+                          },
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.blue,
+                            backgroundColor: Colors.white,
+                          ),
+                          child: const Text('Navegación'),
+                        ),
                       ),
                       Positioned(
                         bottom: 20,
@@ -127,5 +142,15 @@ class AdminPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _openGoogleMaps(double lati, double long) async {
+    final String googleMapsUrl =
+        'https://www.google.com/maps/dir/?api=1&destination=$lati,$long&travelmode=driving';
+    if (await canLaunch(googleMapsUrl)) {
+      await launch(googleMapsUrl);
+    } else {
+      throw 'Could not open Google Maps';
+    }
   }
 }
